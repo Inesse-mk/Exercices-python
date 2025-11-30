@@ -1,0 +1,5 @@
+utilisateur = {
+    "nom": "Alice",
+    "email": "alice@example.com",
+    "age": 30
+}
