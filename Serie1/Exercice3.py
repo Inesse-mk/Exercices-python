@@ -1,5 +1,5 @@
-#  Exercice 3
-age = int (input("Entrez votre age: "))
+age = int (input("Entrez votre age: "))     # saisie et conversion en nombre
+# vérification des tranches d'âge
 if age < 12:
     print ("Tarif : 5.0€")
 elif age >= 12 and age <= 17:

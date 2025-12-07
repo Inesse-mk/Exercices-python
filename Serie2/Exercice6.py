@@ -31,7 +31,7 @@ def totaux_par_client(commandes):
         else:
             totaux[client] = montant
     return totaux
-
+# Lecture des commandes depuis le fichier commandes.txt
 commandes = []
 
 with open("commandes.txt", "r", encoding="utf-8") as f:
@@ -46,7 +46,8 @@ with open("commandes.txt", "r", encoding="utf-8") as f:
                 "statut": champs[3]
             }
             commandes.append(commande)
-
+            
+# Partie exécutable : calculs et affichage
 if __name__ == "__main__":
     ca = calculer_ca(commandes)
     stats = compter_commandes_par_statut(commandes)

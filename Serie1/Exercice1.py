@@ -1,9 +1,8 @@
-#   Exercice 1
-largeur = int(input("Entrez la largeur:"))
-hauteur = float(input("Entrez la hauteur: "))
+largeur = float(input("Entrez la largeur : "))
+hauteur = float(input("Entrez la hauteur : "))
 texte = "Bonjour"
 
 surface = largeur * hauteur
-print (surface)
 perimetre = 2 * (largeur + hauteur)
-print(f"Surface : {surface} - Périmètre : {perimetre}")
+
+print(f"Surface : {surface:.2f} - Périmètre : {perimetre:.2f}")

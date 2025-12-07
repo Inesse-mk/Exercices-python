@@ -1,3 +1,4 @@
+# Fonction pour appliquer une remise sur un prix
 def appliquer_remise(prix: float, remise: float) -> float:
     """
     Calcule le prix final après application d'une remise.
@@ -22,7 +23,7 @@ def appliquer_remise(prix: float, remise: float) -> float:
     prix_final = prix * (1 - remise)
     return prix_final
 
-
+# Fonction pour compter le nombre de commandes supérieures à un seuil
 def compter_commandes_superieures(commandes: list[float], seuil: float) -> int:
     """
     Compte le nombre de commandes supérieures ou égales à un certain seuil.
@@ -50,7 +51,7 @@ def compter_commandes_superieures(commandes: list[float], seuil: float) -> int:
             compteur += 1
     return compteur
 
-
+# Fonction pour normaliser une adresse email
 def normaliser_email(email: str) -> str:
     """
     Normalise une adresse email en supprimant les espaces superflus
@@ -72,5 +73,5 @@ def normaliser_email(email: str) -> str:
     'example@mail.com'
     """
     return email.strip().lower()
-
+# Affiche la documentation de la fonction appliquer_remise
 help(appliquer_remise)

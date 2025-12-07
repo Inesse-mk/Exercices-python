@@ -5,7 +5,7 @@ commandes = [
     {"id": 4, "client": "charlie@example.com","montant": 120.0, "statut": "en_attente"},
     {"id": 5, "client": "bob@example.com",    "montant": 35.0,  "statut": "payee"},
 ]
-
+# Calcul du chiffre d'affaires total des commandes payées
 def calculer_ca(commandes):
     """Retourne le total des montants des commandes payées."""
     total = 0
@@ -14,7 +14,7 @@ def calculer_ca(commandes):
             total += commande["montant"]
     return total
 
-
+# Comptage des commandes par statut
 def compter_commandes_par_statut(commandes):
     """Retourne un dictionnaire {statut: nombre}."""
     stats = {}
@@ -26,7 +26,7 @@ def compter_commandes_par_statut(commandes):
             stats[statut] = 1
     return stats
 
-
+# Calcul du total dépensé par client
 def totaux_par_client(commandes):
     """Retourne un dictionnaire {client: total dépensé}."""
     totaux = {}
@@ -40,7 +40,7 @@ def totaux_par_client(commandes):
     return totaux
 
 
-
+# Partie exécutable
 if __name__ == "__main__":
     ca = calculer_ca(commandes)
     stats = compter_commandes_par_statut(commandes)

@@ -1,10 +1,12 @@
+# Dictionnaire utilisateur
 utilisateur = {
     "nom": "Alice",
     "email": "alice@example.com",
     "age": 30
 }
+# --- LBYL (Look Before You Leap) ---
 def get_age_lbyl(utilisateur):
-    if "age" in utilisateur:
+    if "age" in utilisateur:  # vérification de la présence de la clé
         return utilisateur["age"]
 
     else:
@@ -13,7 +15,7 @@ def get_age_lbyl(utilisateur):
 
 res=get_age_lbyl(utilisateur)
 print(f"Age récupéré : {res}")
-
+# --- EAFP (Easier to Ask for Forgiveness than Permission) ---
 def get_age_eafp(utilisateur):
     try:
         age = utilisateur["age"]
@@ -25,7 +27,7 @@ def get_age_eafp(utilisateur):
 
 res2=get_age_eafp(utilisateur)
 print(f"Age récupéré : {res2}")
-
+# Tests dans le bloc principal
 if __name__ == "__main__":
     # dictionnaire QUI CONTIENT "age"
     print("=== Test avec dictionnaire contenant 'age' ===")
