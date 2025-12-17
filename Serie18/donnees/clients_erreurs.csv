@@ -1,0 +1,5 @@
+nom;age;ville;raison
+Bob;;Lyon;Champ age vide
+;40;Marseille;Champ nom vide
+Claire;abc;Toulouse;Age non convertible en entier
+David;25;;Champ ville vide

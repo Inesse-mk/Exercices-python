@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "titre": "Apprendre Python",
+    "fait": false
+  },
+  {
+    "id": 2,
+    "titre": "Lire la fiche JSON",
+    "fait": true
+  },
+  {
+    "id": 3,
+    "titre": "Écrire un script JSON",
+    "fait": false
+  }
+]
+
+

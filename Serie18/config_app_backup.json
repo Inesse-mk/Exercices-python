@@ -1,0 +1,12 @@
+{
+  "debug": false,
+  "version": "1.0.1",
+  "max_connexions": 20,
+  "services": [
+    "auth",
+    "api",
+    "web",
+    "admin"
+  ],
+  "theme": "dark"
+}
